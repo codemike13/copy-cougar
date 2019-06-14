@@ -38,7 +38,20 @@
   left: 0;
   height: 100%;
   width: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  background-image: url("https://media-cdn.grubhub.com/image/upload/c_scale,w_1650/q_50,dpr_auto,f_auto,fl_lossy,c_crop,e_vibrance:20,g_center,h_900,w_800/v1534256595/Onboarding/Burger.jpg");
+  background-size: cover;
+}
+
+#grubhub{
+  font-size:50px;
+  font-family: sans-serif;
+  color:white;
+  z-index: 1;
+  position: absolute;
+  top:30px;
+  left:100px;
+  letter-spacing: -3px;
 }
 
 /* ////////////////////////////////////////////////// */
@@ -51,58 +64,75 @@
   /* text-align: center; */
   align-content: center;
 }
-
+.top-right-links{
+  display: flex;
+  font-size:20px;
+  color:blue;
+  flex-direction: row;
+  justify-content:flex-end;
+  font-family: sans-serif;
+  position: absolute;
+  right:100px;
+  top:60px
+}
+.top-right-links a {
+  margin-left:40px;
+}
 #address-input-div {
   height: 20%;
   /* flex-direction: column; */
   width: 500px;
   position: relative;
-  top: 255px;
+  top: 250px;
   left: 100px;
 }
 
 #address-input-div h1 {
   display: flex;
-  font-size: 55px;
-  font-weight: 400px;
+  font-size: 50px;
+  font-family: sans-serif;
   line-height: 50px;
   justify-content: center;
   width: 500px;
 }
 
-#address {
-  border:none;
-  width: 300px;
+#address-input {
+  background-color: rgb(235, 235, 235);
+  border-radius: 0px 3px 3px 0px;
+  border: none;
+  width: 250px;
   position: absolute;
-  height: 35px;
-  left: 0px;
+  height: 42px;
+  left: 50px;
+  bottom: -10px;
+  outline: none;
 }
 
 #location {
+  border: none;
   display: flex;
   width: 500px;
-  height: 50px;
+  height: 100px;
   align-content: flex-start;
+  font-size: 12px;
 }
 
-/* #location button{
-  background-image: url(/assets/images/location-icon.png);
-  background-size: contain;
-  width: 50px;
-  
-} */
-
-#location button {
+#location-button {
+  display: flex;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px 0px 0px 4px;
   background-color: rgb(235, 235, 235);
   width: 50px;
+  height: 44px;
   z-index: 1;
-   position: absolute;
-  left: 300px;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  text-align: center;
 }
 
 #location img {
+  display: inline-block;
   border: none;
   border-radius: 100px;
   background-color: rgb(235, 235, 235);
@@ -110,3 +140,16 @@
   height: 35px;
   z-index: 1;
 }
+
+#enter {
+  border-radius: 0px 4px 4px 0px;
+
+  width: 50px;
+  height: 44px;
+  position: absolute;
+  left: 303px;
+  bottom: -10px;
+  background-color: rgb(237, 10, 22);;
+  color:white;
+}
+
