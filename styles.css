@@ -113,7 +113,6 @@
   height: 50px;
   align-content: flex-start;
   font-size: 12px;
-  
 }
 
 #location-button {
@@ -156,53 +155,87 @@
   display: flex;
   height: 350px;
   width: 100%;
-  justify-content:center;
-align-items:center;
-}
-
-#local-pickup {
-  width: 100%;
-  height: 700px;
-  
+  justify-content: center;
+  align-items: center;
 }
 
 #reasons-inner-div {
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: flex-end;
   width: 80%;
   height: 315px;
   font-family: sans-serif;
-  font-size:15px;
+  font-weight: 100;
+  font-size: 15px;
 }
 
 #reasons-inner-div div {
   display: flex;
-  height:100px;
-  width:35%;
+  height: 100px;
+  width: 35%;
   height: 210px;
 }
 
-#reason1, #reason2, #reason3 {
-  display:flex;
+.reason {
+  display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: flex-end;
   text-align: center;
 }
-#reason1 img, #reason2 img, #reason3 img{
-display: flex;
-align-self: center;
-width:25%;
-height: 40px;
-position: relative;
-top:-20px;
+.reason img {
+  display: flex;
+  align-self: center;
+  width: 25%;
+  height: 40px;
+  position: relative;
+  top: -20px;
 }
-#reason1 h3, #reason2 h3, #reason3  h3{
-width:100%;
-height: 30px;
-text-align: center;
-position: relative;
-top:20px;
+.reason h3 {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  top: 20px;
 }
+
+#local-pickup {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif
+  
+}
+
+#lp1{
+  display: flex;
+  width: 80%;
+  height: 100%;
+   justify-content: center;
+  align-items: center;
+}
+
+#lp2 ,#lp3{
+  display: flex;
+  width: 50%;
+  height: 75%;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#lp2 div{
+width:90%;
+height: 200px;
+margin-top: 25px;
+font-size: 15.5px;
+font-weight: 100;
+}
+
+#lp3{
+  background-image: url("https://res.cloudinary.com/grubhub-assets/image/upload/fl_lossy,f_auto,q_80/v1533845150/static-homepage/women-eating-burgers-delivery-v3.png");
+  background-size: contain;
+} 
