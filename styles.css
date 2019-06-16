@@ -2,14 +2,14 @@
   border: 1px solid;
 } */
 #body {
+  display: flex;
   position: relative;
   height: 100%;
 }
 #landing {
   display: flex;
   width: 100%;
-  height: 785px;
-  flex-direction: row;
+  height: 810px;
 }
 #reason-div {
   height: 33.33%;
@@ -27,30 +27,30 @@
   display: flex;
   max-width: 350px;
   position: absolute;
-  top: 555px;
+  top: 585px;
   left: 370px;
   overflow: none;
 }
 #burger-fries {
   display: flex;
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 0;
-  height: 100%;
+  height: 105%;
   width: 50%;
-  object-fit: contain;
   background-image: url("https://media-cdn.grubhub.com/image/upload/c_scale,w_1650/q_50,dpr_auto,f_auto,fl_lossy,c_crop,e_vibrance:20,g_center,h_900,w_800/v1534256595/Onboarding/Burger.jpg");
-  background-size: cover;
+  background-size: 737px;
+  background-repeat: no-repeat;
 }
 
-#grubhub{
-  font-size:50px;
+#grubhub {
+  font-size: 50px;
   font-family: sans-serif;
-  color:white;
+  color: white;
   z-index: 1;
   position: absolute;
-  top:30px;
-  left:100px;
+  top: 30px;
+  left: 100px;
   letter-spacing: -3px;
 }
 
@@ -64,22 +64,22 @@
   /* text-align: center; */
   align-content: center;
 }
-.top-right-links{
+.top-right-links {
   display: flex;
-  font-size:20px;
-  color:blue;
+  font-size: 20px;
+  color: blue;
   flex-direction: row;
-  justify-content:flex-end;
+  justify-content: flex-end;
   font-family: sans-serif;
   position: absolute;
-  right:100px;
-  top:60px
+  right: 100px;
+  top: 60px;
 }
 .top-right-links a {
-  margin-left:40px;
+  margin-left: 40px;
 }
 #address-input-div {
-  height: 20%;
+  height: 40%;
   /* flex-direction: column; */
   width: 500px;
   position: relative;
@@ -92,7 +92,6 @@
   font-size: 50px;
   font-family: sans-serif;
   line-height: 50px;
-  justify-content: center;
   width: 500px;
 }
 
@@ -104,7 +103,6 @@
   position: absolute;
   height: 42px;
   left: 50px;
-  bottom: -10px;
   outline: none;
 }
 
@@ -112,9 +110,10 @@
   border: none;
   display: flex;
   width: 500px;
-  height: 100px;
+  height: 50px;
   align-content: flex-start;
   font-size: 12px;
+  
 }
 
 #location-button {
@@ -127,7 +126,6 @@
   z-index: 1;
   position: absolute;
   left: 0px;
-  bottom: -10px;
   text-align: center;
 }
 
@@ -148,8 +146,63 @@
   height: 44px;
   position: absolute;
   left: 303px;
-  bottom: -10px;
-  background-color: rgb(237, 10, 22);;
-  color:white;
+  background-color: rgb(237, 10, 22);
+  color: white;
 }
 
+/* ///////////////////// Reasons to eat CRUBHUB ////////////////// */
+
+#reasons {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  justify-content:center;
+align-items:center;
+}
+
+#local-pickup {
+  width: 100%;
+  height: 700px;
+  
+}
+
+#reasons-inner-div {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
+  height: 315px;
+  font-family: sans-serif;
+  font-size:15px;
+}
+
+#reasons-inner-div div {
+  display: flex;
+  height:100px;
+  width:35%;
+  height: 210px;
+}
+
+#reason1, #reason2, #reason3 {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+}
+#reason1 img, #reason2 img, #reason3 img{
+display: flex;
+align-self: center;
+width:25%;
+height: 40px;
+position: relative;
+top:-20px;
+}
+#reason1 h3, #reason2 h3, #reason3  h3{
+width:100%;
+height: 30px;
+text-align: center;
+position: relative;
+top:20px;
+}
